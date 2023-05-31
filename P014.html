@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variables de Datos en JavaScript</title>
+</head>
+<body>
+  <h1>Variables de Datos en JavaScript</h1>
+  
+  <button onclick="mostrarVariables()">Mostrar Variables</button>
+  
+  <script>
+    
+    var numero = 10;
+    let texto = "Hola";
+    const PI = 3.1416;
+    var booleano = true;
+    var arreglo = [1, 2, 3, 4, 5];
+    var objeto = { nombre: "Juan", edad: 25 };
+    
+
+    function mostrarVariables() {
+      var resultado = "";
+      resultado += "Número: " + numero + "\n";
+      resultado += "Texto: " + texto + "\n";
+      resultado += "PI: " + PI + "\n";
+      resultado += "Booleano: " + booleano + "\n";
+      resultado += "Arreglo: " + arreglo + "\n";
+      resultado += "Objeto: " + JSON.stringify(objeto) + "\n";
+      alert(resultado);
+    }
+  </script>
+</body>
+</html>
